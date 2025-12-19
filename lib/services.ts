@@ -24,7 +24,7 @@ export const services: Service[] = [
     name: 'The Profit Clarity Program',
     tagline: 'I don\'t just build dashboards. I find your lost money and show you how to keep it.',
     description: 'A complete strategic partnership: deep-dive workshop, data audit, custom dashboard, and strategy session. Transform from running on "vibes" to making data-driven decisions with a strategic partner.',
-    price: '€2,500+',
+    price: 'Premium Tier',
     category: 'strategic-services',
     featured: true,
     orEnhanced: true,
@@ -47,7 +47,7 @@ export const services: Service[] = [
         'Operations Research Optimization'
       ],
       pricing: {
-        basic: 'Starting at €2,500: Full strategic experience with workshop, audit, dashboard, and strategy session'
+        basic: 'Premium Tier: Full strategic experience with workshop, audit, dashboard, and strategy session'
       }
     }
   },
@@ -56,7 +56,7 @@ export const services: Service[] = [
     name: 'The Data Mirror',
     tagline: 'Dashboard-only option: Turn your messy spreadsheets into a live dashboard that tells you if you are making money.',
     description: 'Transform your chaotic data into clear, actionable insights with automated dashboards. Perfect if you already know what you need and just want the dashboard built.',
-    price: '€950 - €1,850',
+    price: 'Basic Tier',
     category: 'systems-builder',
     featured: false,
     details: {
@@ -72,8 +72,8 @@ export const services: Service[] = [
         'Handover Video: 10-minute Loom video explaining how to read and update the dashboard'
       ],
       pricing: {
-        basic: '€950: Connect 1 data source → 1-page Dashboard',
-        pro: '€1,850: Connect 3 data sources → Automated refreshing → 3-page Dashboard'
+        basic: 'Basic Tier: Available in multiple configurations',
+        pro: 'Contact for custom pricing based on your needs'
       }
     }
   },
@@ -82,7 +82,7 @@ export const services: Service[] = [
     name: 'The Data Mirror (OR Edition)',
     tagline: 'Predictive analytics, not just history. See what will happen, not just what happened.',
     description: 'The Data Mirror enhanced with Operations Research: predictive models, Monte Carlo risk scenarios, and statistical significance testing. Mathematical certainty, not guesswork.',
-    price: '€2,500+',
+    price: 'Premium Tier',
     category: 'or-mathematical',
     featured: false,
     orEnhanced: true,
@@ -106,7 +106,7 @@ export const services: Service[] = [
         'Regression Analysis'
       ],
       pricing: {
-        basic: 'Starting at €2,500: Enhanced dashboard with predictive analytics and risk modeling'
+        basic: 'Premium Tier: Enhanced dashboard with predictive analytics and risk modeling'
       }
     }
   },
@@ -115,7 +115,7 @@ export const services: Service[] = [
     name: 'The AI Audit & Roadmap',
     tagline: 'The Gateway - Review your business process and get a roadmap of "3 things to automate today."',
     description: 'Get a comprehensive review of your business processes with actionable automation recommendations.',
-    price: '€295 - €495',
+    price: 'Basic Tier',
     category: 'quick-win',
     featured: true,
     details: {
@@ -137,7 +137,7 @@ export const services: Service[] = [
     name: 'The Meeting Medic',
     tagline: 'Never lose track of meeting notes again. AI-powered note-taking and automated follow-ups.',
     description: 'Set up AI note-taker (Otter/Fireflies) with automation that summarizes calls and drafts "Next Steps" emails automatically.',
-    price: '€450',
+    price: 'Basic Tier',
     category: 'quick-win',
     featured: false,
     details: {
@@ -159,7 +159,7 @@ export const services: Service[] = [
     name: 'The Proposal Perfector',
     tagline: 'Turn proposal writing from hours to minutes. AI generates custom proposals from a simple form.',
     description: 'Automate your sales proposals. Fill in a form (Client Name, Price), and AI generates a custom PDF contract/proposal and drafts the email.',
-    price: '€600',
+    price: 'Basic Tier',
     category: 'quick-win',
     featured: false,
     details: {
@@ -181,7 +181,7 @@ export const services: Service[] = [
     name: 'The Content Machine',
     tagline: 'Turn your voice into LinkedIn posts and blog content. Automate your marketing voice.',
     description: 'Voice-to-LinkedIn/Blog workflow. Automation of your marketing voice to consistently produce content.',
-    price: '€1,200',
+    price: 'Basic Tier',
     category: 'systems-builder',
     featured: false,
     details: {
@@ -203,7 +203,7 @@ export const services: Service[] = [
     name: 'The Lead Hunter',
     tagline: 'Find 100 prospects, get their emails, and draft the first cold outreach line using AI.',
     description: 'Set up a lead-scraping workflow using tools like Clay or Apollo. Automate prospect research and initial outreach.',
-    price: '€1,500',
+    price: 'Basic Tier',
     category: 'systems-builder',
     featured: false,
     details: {
@@ -225,7 +225,7 @@ export const services: Service[] = [
     name: 'The Support Clone',
     tagline: 'A custom chatbot trained on your past emails and website. Answers common questions 24/7.',
     description: 'Build a custom Chatbot (using Chatbase or similar) trained on your past emails/website. It answers common customer questions 24/7.',
-    price: '€1,500 + monthly maintenance',
+    price: 'Basic Tier + Recurring',
     category: 'systems-builder',
     featured: false,
     details: {
@@ -247,7 +247,7 @@ export const services: Service[] = [
     name: 'The Knowledge Brain',
     tagline: 'Organize your chaotic Google Drive/Notion into a searchable AI wiki. Stop asking "Where is that file?"',
     description: 'For teams of 3-10 people. Organize your chaotic Google Drive/Notion into a searchable AI wiki so staff stops asking "Where is that file?"',
-    price: '€2,000',
+    price: 'Premium Tier',
     category: 'systems-builder',
     featured: false,
     details: {
@@ -269,7 +269,7 @@ export const services: Service[] = [
     name: 'The Admin Auto-Pilot',
     tagline: 'Complex automations for invoicing, CRM management, and administrative tasks.',
     description: 'Complex automations for invoicing, CRM management, and other administrative tasks that eat up your time.',
-    price: '€1,500 setup + €200/month',
+    price: 'Basic Tier + Recurring',
     category: 'recurring',
     featured: false,
     details: {
@@ -291,7 +291,7 @@ export const services: Service[] = [
     name: 'The CTO-in-a-Pocket',
     tagline: 'Retainer access to me. Troubleshooting, updates, and advice when you need it.',
     description: 'They pay for access to you. Troubleshooting, updates, and advice. Your technical partner on retainer.',
-    price: '€300 - €500/month',
+    price: 'Recurring',
     category: 'recurring',
     featured: false,
     details: {
@@ -313,7 +313,7 @@ export const services: Service[] = [
     name: 'The Algorithm Auditor',
     tagline: 'The black box breaker. I explain the math behind your AI decisions and ensure they\'re not making biased choices.',
     description: 'AI Governance & Risk Assessment for companies using AI tools. I review automated decision-making to ensure mathematical fairness and explainability. When AI makes a decision, I can tell you why—and whether it\'s mathematically sound.',
-    price: '€2,500+',
+    price: 'Premium Tier',
     category: 'or-mathematical',
     featured: false,
     orEnhanced: true,
@@ -340,7 +340,7 @@ export const services: Service[] = [
         'Information Theory'
       ],
       pricing: {
-        basic: 'Starting at €2,500: Comprehensive AI governance audit with mathematical analysis'
+        basic: 'Premium Tier: Comprehensive AI governance audit with mathematical analysis'
       }
     }
   },
@@ -349,7 +349,7 @@ export const services: Service[] = [
     name: 'The Predictive Engine',
     tagline: 'See what will happen, not just what happened. Monte Carlo simulations and probability distributions built into your dashboard.',
     description: 'Most dashboards show history. I build predictive models with Monte Carlo simulations, time series forecasting, and risk scenarios. Know the probability of future outcomes, not just past performance.',
-    price: '€3,000+',
+    price: 'Premium Tier',
     category: 'or-mathematical',
     featured: false,
     orEnhanced: true,
@@ -376,7 +376,7 @@ export const services: Service[] = [
         'Statistical Forecasting'
       ],
       pricing: {
-        basic: 'Starting at €3,000: Predictive dashboard with Monte Carlo simulations and risk modeling'
+        basic: 'Premium Tier: Predictive dashboard with Monte Carlo simulations and risk modeling'
       }
     }
   },
@@ -385,7 +385,7 @@ export const services: Service[] = [
     name: 'The System Optimizer',
     tagline: 'Mathematically minimize waste to zero. Operations Research solutions for scheduling, inventory, routing, and resource allocation.',
     description: 'I don\'t just automate—I optimize. Using Linear Programming, Integer Programming, Queuing Theory, and Graph Theory, I solve complex business problems that standard logic cannot solve.',
-    price: '€3,500+',
+    price: 'Premium Tier',
     category: 'or-mathematical',
     featured: false,
     orEnhanced: true,
@@ -414,7 +414,7 @@ export const services: Service[] = [
         'Dynamic Programming'
       ],
       pricing: {
-        basic: 'Starting at €3,500: Complete Operations Research solution with mathematical optimization'
+        basic: 'Premium Tier: Complete Operations Research solution with mathematical optimization'
       }
     }
   }

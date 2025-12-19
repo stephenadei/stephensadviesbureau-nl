@@ -83,14 +83,17 @@ export default function ServiceCard({ service, featured = false }: ServiceCardPr
             <h4 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
               Pricing:
             </h4>
-            <ul className="space-y-1 text-sm text-zinc-600 dark:text-zinc-400">
-              {service.details.pricing.basic && (
-                <li>• {service.details.pricing.basic}</li>
-              )}
-              {service.details.pricing.pro && (
-                <li>• {service.details.pricing.pro}</li>
-              )}
-            </ul>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              {service.details.pricing.basic}
+            </p>
+            {service.details.pricing.pro && (
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                {service.details.pricing.pro}
+              </p>
+            )}
+            <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-500 italic">
+              Contact us for detailed pricing information
+            </p>
           </div>
         )}
       </div>
