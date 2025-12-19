@@ -427,3 +427,35 @@ export const recurringServices = services.filter(s => s.category === 'recurring'
 export const strategicServices = services.filter(s => s.category === 'strategic-services');
 export const orMathematicalServices = services.filter(s => s.category === 'or-mathematical');
 
+export function getServiceById(id: string): Service | undefined {
+  return services.find(s => s.id === id);
+}
+
+export function getRelatedServices(currentService: Service, limit: number = 3): Service[] {
+  // Get services from the same category, excluding the current one
+  const sameCategory = services.filter(
+    s => s.category === currentService.category && s.id !== currentService.id
+  );
+  
+  // If not enough in same category, add from similar categories
+  if (sameCategory.length < limit) {
+    const similarCategories: Record<string, string[]> = {
+      'quick-win': ['systems-builder'],
+      'systems-builder': ['quick-win', 'strategic-services'],
+      'strategic-services': ['systems-builder', 'or-mathematical'],
+      'or-mathematical': ['strategic-services'],
+      'recurring': ['systems-builder']
+    };
+    
+    const similar = services.filter(
+      s => s.id !== currentService.id && 
+           !sameCategory.includes(s) &&
+           similarCategories[currentService.category]?.includes(s.category)
+    );
+    
+    return [...sameCategory, ...similar].slice(0, limit);
+  }
+  
+  return sameCategory.slice(0, limit);
+}
+
