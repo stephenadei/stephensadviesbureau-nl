@@ -1,0 +1,77 @@
+# Cursor Workflow Rules: Plan Mode vs Agent Mode
+
+## When to Use Plan Mode
+
+Use **Plan Mode** for:
+- Architecture decisions and system design
+- Complex multi-step tasks (3+ distinct steps)
+- Initial project setup and scaffolding
+- Major refactoring or restructuring
+- Feature planning and strategy
+- Tasks requiring review before execution
+
+**Trigger phrases:**
+- "Let's plan..."
+- "How should we approach..."
+- "Design a system for..."
+- "Create a strategy for..."
+- "What's the best way to..."
+- "Brainstorm..."
+
+**Benefits:**
+- Prevents premature execution
+- Allows review and approval before changes
+- Better for complex decisions
+- Reduces mistakes and rework
+
+## When to Use Agent Mode
+
+Use **Agent Mode** for:
+- Implementation after planning is complete
+- Iterative development and refinement
+- Quick fixes and small changes
+- Following established patterns
+- Executing approved plans
+- Simple tasks (< 3 steps)
+
+**Trigger phrases:**
+- "Implement..."
+- "Build..."
+- "Fix..."
+- "Add..."
+- "Update..." (when plan is clear)
+- "Create..."
+- "Let's build..."
+
+**Benefits:**
+- Faster iteration
+- Immediate execution
+- Better for straightforward tasks
+- More efficient for routine work
+
+## Workflow Optimization Guidelines
+
+1. **Always start complex tasks in Plan Mode** - Get approval before major work
+2. **Switch to Agent Mode after plan approval** - Execute once the approach is clear
+3. **For simple tasks (< 3 steps), Agent Mode is fine** - Don't over-plan trivial work
+4. **When user says "let's build" or "implement", use Agent Mode** - They're ready to execute
+5. **If unsure, default to Plan Mode** - Better to plan first than redo work
+
+## Example Workflows
+
+**Complex Feature:**
+1. User: "Let's add a booking system"
+2. → Use Plan Mode: Design architecture, database schema, API routes
+3. User approves plan
+4. → Switch to Agent Mode: Implement the booking system
+
+**Quick Fix:**
+1. User: "Fix the typo on the contact page"
+2. → Use Agent Mode: Directly fix the typo
+
+**New Project:**
+1. User: "Build a website for my consultancy"
+2. → Use Plan Mode: Discuss approaches, tech stack, structure
+3. User approves plan
+4. → Switch to Agent Mode: Implement the website
+
